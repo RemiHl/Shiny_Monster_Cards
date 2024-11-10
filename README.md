@@ -1,4 +1,4 @@
-# Cartes de monstres intercatives ✨
+# Cartes de monstres interactives ✨
 
 Ceci est une carte interactive avec des effets de brillance et de mouvement, entièrement réalisée en HTML, CSS, et JavaScript. L’objectif est de créer une expérience visuelle captivante, avec des effets de brillance et des animations au survol pour donner vie à une carte sans utiliser de 3D pure.
 
