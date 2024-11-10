@@ -23,3 +23,31 @@ Ce projet utilise du HTML, du CSS et du JavaScript pur pour créer une carte ave
 ## 💻 Développement
 
 Je développe ces cartes sur mon temps libre. Tout messages de soutien ou de contributions sont les bienvenus. Je suis jeune développeur et je prend tout les conseils qui sont bon à prendre. Si vous avez des suggestions ou des idées, n'hésitez pas à me les partager.
+
+
+
+# Interactive Monster Cards ✨
+
+This is an interactive card with shimmer and motion effects, created entirely with HTML, CSS, and JavaScript. The goal is to create a visually captivating experience, with shine effects and hover animations to bring the card to life without using pure 3D.
+
+## 🎨 Demo
+
+*You can see a demo by opening the `index.html` file in your browser.*
+
+## 📜 Description
+
+This project uses pure HTML, CSS, and JavaScript to create a card with the following features:
+
+- **Shimmer Effect**: The card subtly shines to attract attention and simulate a rare card.
+- **Hover Movement Effect**: When the user hovers over the card, it shifts slightly to create a depth effect.
+- **Additional Visual Effects**: Uses gradients, shadows, and CSS animations to give the card a premium look.
+
+## 🛠️ Technologies Used
+
+- **HTML5**: for the basic structure of the card.
+- **CSS3**: for styling and animations, including the shimmer and motion effects.
+- **JavaScript**: to add dynamic interactions, such as mouse movement tracking.
+
+## 💻 Development
+
+I develop these cards in my free time. Supportive messages and contributions are welcome! As a young developer, I appreciate any good advice. If you have suggestions or ideas, feel free to share them with me.
