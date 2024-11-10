@@ -1,6 +1,6 @@
 const card = document.querySelector('.card');
 const cardBackground = document.querySelector('.card-background');
-const cardImage = document.querySelector('.card-image img');
+const cardImage = document.querySelector('.card-image img'); 
 
 const rows = 7;
 const cols = 5;
