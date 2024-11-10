@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      
+      <div class="card-background"></div>
+
+      <!-- Nom et HP -->
+      <div class="card-header">
+        <span class="badge">Basic</span>
+        <span class="name">Pikachu</span>
+        <span class="hp">HP 40 <img src="images/lightning.png" alt="Type"></span>
+      </div>
+
+      <!-- Image principale -->
+      <div class="card-image">
+        <img src="images/pikachu.png" alt="Pikachu">
+      </div>
+
+      <!-- Attaque -->
+      <div class="card-attack">
+        <div class="attack-info">
+          <span class="attack-icon"><img src="images/lightning.png" alt="Type"></span>
+          <span class="attack-name">Pika Strike</span>
+          <span class="attack-power">20+</span>
+        </div>
+        <p class="attack-description">If 1 of your Dedenne used Dede-Short during your last turn, this attack does 180 more damage.</p>
+      </div>
+
+      <!-- Faiblesse, Résistance et Retraite -->
+      <div class="card-stats">
+        <div class="stat">
+          <span>Weakness</span> <img src="images/pokemon_type_combat.png" alt="Fighting"> x2
+        </div>
+        <div class="stat">
+          <span>Resistance</span>
+        </div>
+        <div class="stat">
+          <span>Retreat</span> <img src="images/pokemon_normal2.png" alt="Retreat">
+        </div>
+      </div>
+
+      <!-- Infos bas de carte -->
+      <div class="card-footer">
+        <span>Illus. Souichirou Gunjima</span>
+        <span>049/195<br>Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

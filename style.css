@@ -1,0 +1,176 @@
+/* Style de base */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #7c7c7c;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-container {
+  perspective: 1500px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  border: 10px solid #dcc053;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(247, 210, 103, 0.95);
+  padding: 10px;
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+/* Fond de la carte */
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Lumière dynamique */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.3), transparent 60%);
+  transition: background 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Nom et HP */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffd700;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+  z-index: 3; 
+}
+
+.card-header .badge {
+  font-size: 0.6em;
+  background-color: #c7c7c7;
+  padding: 3px 6px;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-right: 6px;
+}
+
+.card-header .name {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.card-header .hp {
+  color: red;
+}
+
+.card-header .hp img {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-left: 15px;
+}
+
+/* Image principale */
+.card-image {
+  position: relative;
+  padding-right: 6px;
+  z-index: 3;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid rgb(175, 175, 175);
+  border-radius: 8px;
+  margin-top: 10px;
+  z-index: 3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Attaque */
+.card-attack {
+  background-color: #ffdf8d;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  z-index: 3;
+}
+
+.card-attack .attack-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-attack .attack-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-attack .attack-name {
+  flex: 1;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.card-attack .attack-power {
+  font-weight: bold;
+  color: #c12626;
+}
+
+/* Statistiques */
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffd700;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 0.8em;
+  z-index: 3;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+}
+
+.card-stats .stat img {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+/* Bas de carte */
+.card-footer {
+  text-align: center;
+  font-size: 0.55em;
+  color: #555;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  z-index: 3;
+}
