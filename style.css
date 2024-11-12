@@ -214,3 +214,7 @@ body {
 .card.charmander .card-attack .attack-description {
   margin-top: 24px;
 }
+
+.card.charmander .card-stats {
+  background-color: #ff8c00;
+}
