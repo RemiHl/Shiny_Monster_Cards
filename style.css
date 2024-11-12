@@ -9,7 +9,12 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Conteneur de cartes */
 .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap;
   perspective: 1500px;
 }
 
@@ -20,11 +25,9 @@ body {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: rgba(247, 210, 103, 0.95);
   padding: 10px;
   transition: transform 0.1s ease-out, box-shadow 0.3s ease;
   transform-style: preserve-3d;
-  z-index: 2;
 }
 
 /* Fond de la carte */
@@ -100,7 +103,7 @@ body {
 
 .card-image img {
   width: 100%;
-  height: auto;
+  height: 200px;
   display: block;
   border: 4px solid rgb(175, 175, 175);
   border-radius: 8px;
@@ -117,6 +120,7 @@ body {
   border-radius: 8px;
   font-size: 0.9em;
   z-index: 3;
+  height: 20%;
 }
 
 .card-attack .attack-info {
@@ -173,4 +177,40 @@ body {
   border-top: 1px solid #ddd;
   margin-top: 10px;
   z-index: 3;
+}
+
+/* Style spécifique pour la carte Pikachu */
+.card.pikachu {
+  border: 10px solid #dcc053;
+  background-color: rgba(247, 210, 103, 0.95);
+}
+
+.card.pikachu .card-header {
+  background-color: #ffd700;
+}
+
+.card.pikachu .card-attack {
+  background-color: #ffdf8d;
+}
+
+/* Style pour la carte Salamèche */
+.card.charmander {
+  border: 10px solid #dc5353;
+  background-color: rgba(255, 172, 70, 0.95);
+}
+
+.card.charmander .card-header {
+  background-color: #ff8c00;
+}
+
+.card.charmander .card-header .hp {
+  color: black;
+}
+
+.card.charmander .card-attack {
+  background-color: #ffcc80;
+}
+
+.card.charmander .card-attack .attack-description {
+  margin-top: 24px;
 }
