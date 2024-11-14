@@ -2,6 +2,8 @@ const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
     const cardImage = card.querySelector('.card-image img');
+    const cardHeader = card.querySelector('.card-header');
+    const cardStats = card.querySelector('.card-stats');
 
     card.addEventListener('mousemove', (e) => {
         const { width, height, left, top } = card.getBoundingClientRect();
@@ -20,7 +22,10 @@ cards.forEach(card => {
         card.style.transform = `rotateY(${deltaX}deg) rotateX(${-deltaY}deg)`;
 
         const brightness = 1 + (Math.max(0, 1 - Math.sqrt(deltaX ** 2 + deltaY ** 2) / 20) * 0.4);
+        card.style.setProperty('--brightness', `${brightness}`);
         cardImage.style.filter = `brightness(${brightness})`;
+        cardHeader.style.filter = `brightness(${brightness})`;
+        cardStats.style.filter = `brightness(${brightness})`;
     });
 
     card.addEventListener('mouseleave', () => {
@@ -29,5 +34,6 @@ cards.forEach(card => {
         card.style.setProperty('--mouse-y', `50%`);
 
         cardImage.style.filter = 'brightness(1)';
+        cardHeader.style.setProperty = ('--border-brightness', '1');
     });
 });
