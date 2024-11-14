@@ -22,7 +22,6 @@ cards.forEach(card => {
         card.style.transform = `rotateY(${deltaX}deg) rotateX(${-deltaY}deg)`;
 
         const brightness = 1 + (Math.max(0, 1 - Math.sqrt(deltaX ** 2 + deltaY ** 2) / 20) * 0.4);
-        card.style.setProperty('--brightness', `${brightness}`);
         cardImage.style.filter = `brightness(${brightness})`;
         cardHeader.style.filter = `brightness(${brightness})`;
         cardStats.style.filter = `brightness(${brightness})`;
@@ -34,6 +33,5 @@ cards.forEach(card => {
         card.style.setProperty('--mouse-y', `50%`);
 
         cardImage.style.filter = 'brightness(1)';
-        cardHeader.style.setProperty = ('--border-brightness', '1');
     });
 });
